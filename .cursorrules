@@ -1,0 +1,59 @@
+# SmartHire Project Rules
+
+## Project Overview
+SmartHire is a local-first recruitment platform with AI-powered candidate ranking.
+All features work completely offline with zero cloud dependencies.
+
+## Tech Stack
+- Frontend: Next.js 14, TypeScript, Tailwind CSS, Shadcn UI
+- Backend: Express.js, SQLite, Session-based Auth
+- ML: Python FastAPI, scikit-learn
+
+## Development Guidelines
+
+### Code Style
+- Use TypeScript for all frontend code
+- Use ES6+ features in backend
+- Follow functional programming patterns where possible
+- Use descriptive variable and function names
+
+### Frontend
+- All interactive components must use 'use client'
+- Use Shadcn UI components consistently
+- Implement proper loading states
+- Show user-friendly error messages
+- Make all pages responsive
+
+### Backend
+- Validate all inputs
+- Use proper HTTP status codes
+- Handle errors gracefully
+- Log important operations
+- Use transactions for multi-step operations
+
+### ML
+- Keep models small and fast
+- Provide rationale for all predictions
+- Use fallback when service unavailable
+- Cache models in memory
+
+### Database
+- Use UUIDs for primary keys
+- Index foreign keys
+- Normalize data appropriately
+- Use JSON for flexible schemas
+
+### Security
+- Hash all passwords with bcrypt
+- Validate and sanitize inputs
+- Use parameterized queries
+- Set secure session cookies
+- Implement proper CORS
+
+## Local-First Principles
+- No external API calls
+- All data stored locally
+- Works without internet
+- ML models trained locally
+- Self-contained deployment
+
